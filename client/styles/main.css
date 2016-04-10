@@ -1,0 +1,110 @@
+/* CSS declarations go here */
+body{
+  height:100%; margin:0;padding:0;
+  /* Ensures that the transition only runs in one direction */
+  -webkit-transition: background-color 0;
+  transition: background-color 0;
+}
+
+.background-white{
+  background: white;
+}
+.background-blue{
+  background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(246,41,12,1) 0%, rgba(241,111,92,1) 0%, rgba(4,76,127,1) 0%, rgba(60,148,227,1) 100%);
+}
+
+.container-fluid{
+  height:100%;
+  display:table;
+  width: 100%;
+  padding: 0;
+}
+.buttonRounded {
+  border-radius: 25px;
+  border: 2px solid #5B5B58;
+  align-content: center;
+  width: 15em;
+  height: 3em;
+}
+
+.buttonTrans{
+  border: 2px solid #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.buttonSolid{
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-position: left center;
+  font-size: 15px;
+}
+.rounded {
+  border-radius: 25px;
+  border: 2px solid #5B5B58;
+  --padding-left: 10em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 20em;
+  height: 3em;
+}
+@media (min-width: 360px) and (max-width: 640px) {
+  .btn-responsive {
+    padding: 4px 9px;
+    width: 70%;
+    margin-bottom: 1em;
+    padding-left: 2.5em;
+    --font-size: 100%;
+    line-height: 2;
+  }
+}
+@media (min-width: 640px) and (max-width: 993px) {
+  .btn-responsive {
+    padding: 4px 9px;
+    width: 50%;
+    height: auto;
+    margin-bottom: 1em;
+    padding-left: 2.5em;
+    --font-size: 100%;
+    line-height: 2;
+  }
+}
+@media (min-width: 993px) {
+  .btn-responsive {
+    padding: 4px 9px;
+    width: 40%;
+    height: auto;
+    margin-bottom: 1em;
+    padding-left: 2.5em;
+    --font-size: 100%;
+    line-height: 2;
+  }
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url(fonts/GrandHotel-Regular.otf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+.logo-font{
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: logoFont;
+  font-size: 100px;
+  color: white;
+}
+
+.roboto-font{
+  position: relative;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-family: roboto;
+}

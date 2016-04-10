@@ -1,0 +1,20 @@
+.text-signup{
+  font-size: 20px;
+  color: white;
+}
+.username-signup {
+  width: auto;
+  background: url(img/iconUser.svg) no-repeat;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-position: left center;
+  font-size: 20px;
+}
+
+.password-signup {
+  width: auto;
+  background: url(img/iconSecret.svg) no-repeat;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-position: left center;
+  -webkit-text-security: circle;
+  font-size: 20px;
+}
